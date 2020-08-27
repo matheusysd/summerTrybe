@@ -3,19 +3,19 @@
 # <div class="text-green">teste</div>
 <div class="text-green">teste</div>
 
-<h2 style="color:#0fa36b">O QUE VAMOS APRENDER?</h2>
+<h2 style="color:#0fa36b">O que vamos aprender?</h2>
 
 <div style="font-family:Roboto,sans-serif">Você já aprendeu a trabalhar com arrays e suas utilidades, agora você irá aprender sobre duas poderosíssimas <i>High Order Functions</i>: <span style="color:#e83e8c">Array.map</span> e <span style="color:#e83e8c">Array.reduce</span>.</div>
 
-<h2 style="color:#0fa36b">VOCÊ SERÁ CAPAZ DE:</h2>
+<h2 style="color:#0fa36b">Você será capaz de:</h2>
 
 <div style="font-family:Roboto,sans-serif">Utilizar o <span style="color:#e83e8c">Array.map</span> e o <span style="color:#e83e8c">Array.reduce</span> para criar e manipular arrays com mais facilidade.</div>
 
-<h2 style="color:#0fa36b">PORQUE ISSO É IMPORTANTE?</h2>
+<h2 style="color:#0fa36b">Porque isso é importante?</h2>
 
 <div style="font-family:Roboto,sans-serif">Como você já viu, <i>arrays</i> são uma valiosa unidade de armazenamento usada a todo momento. Porém chega um ponto que lidar com elas fica complicado, as <i>High Order Functions</i> servem para facilitar e ajudar nesse quesito.</div>
 
-<h2 style="color:#0fa36b">CONTEÚDOS</h2>
+<h2 style="color:#0fa36b">Conteúdos</h2>
 
 <h2 style="color:#0fa36b">Array.map</h2>
 
@@ -148,7 +148,7 @@ console.log(pessoas);
 
 > <div style="font-family:Roboto,sans-serif">Você verá que o uso do <strong>map</strong> é bem comum em conjunto com outras <i>HOFs</i>.</div>
 
-<h2 style="color:#0fa36b"><div style="font-family:Roboto,sans-serif">EXERCÍCIOS:</div></h2>
+<h2 style="color:#0fa36b"><div style="font-family:Roboto,sans-serif">Exercícios</div></h2>
 
-<h2 style="color:#0fa36b"><div style="font-family:Roboto,sans-serif">RECURSOS ADICIONAIS:</div</h2>
+<h2 style="color:#0fa36b"><div style="font-family:Roboto,sans-serif">Recursos adicionais</div</h2>
 
