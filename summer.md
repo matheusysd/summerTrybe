@@ -1,6 +1,7 @@
 <h1 style="color:#0fa36b">Higher Order Functions - Map e Reduce</h1>
 
-# <div class="text-green">teste</div>
+ <div class="text-green"> # teste </div>
+ 
 <div class="text-green">teste</div>
 
 <h2 style="color:#0fa36b">O que vamos aprender?</h2>
@@ -20,6 +21,7 @@
 <h2 style="color:#0fa36b">Array.map</h2>
 
 <div style="font-family:Roboto,sans-serif">Como já visto anteriormente, as <i>HOFs</i> tem uma estrutura semelhante, <i>Array.HOF</i>, logo com o <strong style="color:#e83e8c">map</strong> não é diferente: <span style="color:#e83e8c">Array.map</span>.
+
 Ok, agora vamos ao seu uso:
 Para nosso estudo estaremos usando no momento o seguinte <i>array</i>: </div>
 
@@ -44,7 +46,7 @@ for (let indice = 0; indice < pessoas.length; indice += 1) {
 
 <div style="font-family:Roboto,sans-serif">E a sua execução resultaria em:</div>
 
-```
+```shell
 Jaqueline Souza tem 38 anos.
 Júlia Diniz tem 15 anos.
 Rafael Castro tem 10 anos.
@@ -85,7 +87,7 @@ pessoas.map((pessoa) =>
 
 <div style="font-family:Roboto,sans-serif">E como será o resultado disso? O mesmo que o primeiro:</div>
 
-```js
+```shell
 Jaqueline Souza tem 38 anos.
 Júlia Diniz tem 15 anos.
 Rafael Castro tem 10 anos.
