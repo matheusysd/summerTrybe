@@ -1,5 +1,5 @@
 <h1 style="color:#0fa36b">Higher Order Functions - Map e Reduce</h1>
-
+<div class="markdown-body">
  <div class="text-green"> # teste </div>
  
 <div class="text-green">teste</div>
@@ -7,7 +7,7 @@
 <h2 style="color:#0fa36b">O que vamos aprender?</h2>
 
 <div style="font-family:Roboto,sans-serif">Você já aprendeu a trabalhar com arrays e suas utilidades, agora você irá aprender sobre duas poderosíssimas <i>High Order Functions</i>: <span style="color:#e83e8c">Array.map</span> e <span style="color:#e83e8c">Array.reduce</span>.</div>
-
+</div>
 <h2 style="color:#0fa36b">Você será capaz de:</h2>
 
 <div style="font-family:Roboto,sans-serif">Utilizar o <span style="color:#e83e8c">Array.map</span> e o <span style="color:#e83e8c">Array.reduce</span> para criar e manipular arrays com mais facilidade.</div>
@@ -94,8 +94,9 @@ Rafael Castro tem 10 anos.
 Ana Cardoso tem 26 anos.
 ```
 
-<div style="font-family:Roboto,sans-serif">Bem mais prático não é? Com uma única linha nós temos o mesmo resultado que o for.
-Ok já temos uma noção do que o <strong style="color:#e83e8c">map</strong> faz, mas não para por aí. Você deve estar se perguntando "Eu já vi isso antes, é igual o forEach", é aí que você se engana, essas duas <i>HOFs</i> se diferenciam em um ponto, o <strong style="color:#e83e8c">map</strong> retorna um <i>array</i>. 
+<div style="font-family:Roboto,sans-serif">Bem mais prático não é? Com uma única linha nós temos o mesmo resultado que o <strong style="color:#e83e8c">for</strong>.
+
+Ok já temos uma noção do que o <strong style="color:#e83e8c">map</strong> faz, mas não para por aí. Você deve estar se perguntando "Eu já vi isso antes, é igual o <strong style="color:#e83e8c">forEach</strong>", é aí que você se engana, essas duas <i>HOFs</i> se diferenciam em um ponto, o <strong style="color:#e83e8c">map</strong> retorna um <i>array</i>.
 Vamos ver na prática:</div>
 
 ```js
@@ -116,8 +117,9 @@ console.log(infoPessoas);
 ];
 ```
 
-><div style="font-family:Roboto,sans-serif">Um ponto importante que você deve lembrar sempre, o <strong>map</strong> não altera o array original, ele apenas faz a leitura do conteúdo e o aplica como você decidir.</div>
-<br>
+> <div style="font-family:Roboto,sans-serif">Um ponto importante que você deve lembrar sempre, o <strong>map</strong> não altera o array original, ele apenas faz a leitura do conteúdo e o aplica como você decidir.</div>
+> <br>
+
 <div style="font-family:Roboto,sans-serif">Imagine agora que você quer mostrar a informação dentro do nosso <i>array</i> porém precisa fazer uma modificação antes de mostrar, você pode fazer o seguinte:</div>
 
 ```js
@@ -153,4 +155,3 @@ console.log(pessoas);
 <h2 style="color:#0fa36b"><div style="font-family:Roboto,sans-serif">Exercícios</div></h2>
 
 <h2 style="color:#0fa36b"><div style="font-family:Roboto,sans-serif">Recursos adicionais</div</h2>
-
