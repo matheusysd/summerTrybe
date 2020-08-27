@@ -1,6 +1,7 @@
 <h1 style="color:#0fa36b">Higher Order Functions - Map e Reduce</h1>
 
-# <p class="text-green">teste</p>
+# <div class="text-green">teste</div>
+<div class="text-green">teste</div>
 
 <h2 style="color:#0fa36b">O QUE VAMOS APRENDER?</h2>
 
