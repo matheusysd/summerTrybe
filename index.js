@@ -44,5 +44,5 @@ const pessoas = [
 
 
 const idades = [38, 15, 10, 26];
-const somaIdades = idades.reduce((acc, curr) => acc + curr);
+const somaIdades = idades.reduce((acc, curr) => acc + curr, 10);
 console.log(`A soma do array idades é: ${somaIdades}.`);

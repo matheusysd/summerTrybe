@@ -236,6 +236,8 @@ E assim vemos:
 A soma do array idades é: 89.
 ```
 > Note que nesse caso não é necessário definir o valor inicial, por se tratar de um array simples podemos assumir que o valor inicial será a primeira posição do array.
+
+> No código acima se declararmos o valor inicial como 21, você tem ideia do que aconteceria, experimente!
 ## Exercícios
 
-## Recursos adicionais</div
+## Recursos adicionais
