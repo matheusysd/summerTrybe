@@ -65,10 +65,10 @@ O resultado disso é:
 
 ```js
 [
-  'Jaqueline Souza tem 39 anos.',
-  'Júlia Diniz tem 16 anos.',
-  'Rafael Castro tem 11 anos.',
-  'Ana Cardoso tem 27 anos.',
+  'Jaqueline Souza tem 38 anos.',
+  'Júlia Diniz tem 17 anos.',
+  'Rafael Castro tem 10 anos.',
+  'Ana Cardoso tem 26 anos.',
 ];
 ```
 
@@ -106,10 +106,10 @@ Você já deve saber, mas o resultado disso é:
 
 ```js
 [
-  'Jaqueline Souza tem 39 anos.',
-  'Júlia Diniz tem 16 anos.',
-  'Rafael Castro tem 11 anos.',
-  'Ana Cardoso tem 27 anos.',
+  'Jaqueline Souza tem 38 anos.',
+  'Júlia Diniz tem 15 anos.',
+  'Rafael Castro tem 10 anos.',
+  'Ana Cardoso tem 26 anos.',
 ];
 ```
 
@@ -130,10 +130,10 @@ A execução dessas linhas resultam nisso:
 
 ```js
 [
-  'Jaqueline Souza tem 38 anos.',
-  'Júlia Diniz tem 15 anos.',
-  'Rafael Castro tem 10 anos.',
-  'Ana Cardoso tem 26 anos.'
+  'Jaqueline Souza tem 39 anos.',
+  'Júlia Diniz tem 16 anos.',
+  'Rafael Castro tem 11 anos.',
+  'Ana Cardoso tem 27 anos.'
 ]
 [
   { nome: 'Jaqueline', sobrenome: 'Souza', idade: 38 },
