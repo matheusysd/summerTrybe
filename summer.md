@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-</head>
-<style> h1{ color: green} </style>
-<h1> blah </h1>
 <h1 style="color:#0fa36b">Higher Order Functions - Map e Reduce</h1>
-<div class="markdown-body">
- <div class="text-green"> # teste </div>
- 
-<div class="text-green">teste</div>
 
 <h2 style="color:#0fa36b">O que vamos aprender?</h2>
 
 <div style="font-family:Roboto,sans-serif">Você já aprendeu a trabalhar com arrays e suas utilidades, agora você irá aprender sobre duas poderosíssimas <i>High Order Functions</i>: <span style="color:#e83e8c">Array.map</span> e <span style="color:#e83e8c">Array.reduce</span>.</div>
-</div>
+
 <h2 style="color:#0fa36b">Você será capaz de:</h2>
 
 <div style="font-family:Roboto,sans-serif">Utilizar o <span style="color:#e83e8c">Array.map</span> e o <span style="color:#e83e8c">Array.reduce</span> para criar e manipular arrays com mais facilidade.</div>
@@ -161,4 +151,3 @@ console.log(pessoas);
 <h2 style="color:#0fa36b"><div style="font-family:Roboto,sans-serif">Exercícios</div></h2>
 
 <h2 style="color:#0fa36b"><div style="font-family:Roboto,sans-serif">Recursos adicionais</div</h2>
-</html>
