@@ -1,4 +1,7 @@
-<style> h1{ color: 'green'} </style>
+<html>
+<head>
+</head>
+<style> h1{ color: green} </style>
 <h1> blah </h1>
 <h1 style="color:#0fa36b">Higher Order Functions - Map e Reduce</h1>
 <div class="markdown-body">
@@ -157,3 +160,4 @@ console.log(pessoas);
 <h2 style="color:#0fa36b"><div style="font-family:Roboto,sans-serif">Exercícios</div></h2>
 
 <h2 style="color:#0fa36b"><div style="font-family:Roboto,sans-serif">Recursos adicionais</div</h2>
+</html>
