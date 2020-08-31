@@ -511,3 +511,14 @@ assert.deepEqual(apenasGrifinoria(), resultado_esperado);
 
 ```
 ## Recursos adicionais
+* [Artigo falando sobre Map, Reduce e Filter com exemplos](https://www.freecodecamp.org/news/javascript-map-reduce-and-filter-explained-with-examples/ "Artigo falando sobre Map, Reduce e Filter com exemplos")
+
+* [Um guia sobre Reduce](https://www.freecodecamp.org/news/reduce-f47a7da511a9/ "Um guia sobre reduce")
+
+* [Reduzindo uma coleção em um único objeto com reduce](https://www.devmedia.com.br/javascript-reduce-reduzindo-uma-colecao-em-um-unico-objeto/37981 "Reduzindo uma coleção em um único objeto com reduce")
+
+* [Documentação MDN sobre map](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map "Documentação MDN sobre map")
+
+* [Documentação MDN sobre reduce](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce "Documentação MDN sobre reduce")
+
+<!-- Um disclaimer a ser feito por minha pessoa, levei em consideração que o conteúdo de filter não teria sido aprendido até o momento que esse conteúdo será apresentado, pelo fato de não saber onde o conteúdo de filter foi parar, visto que filter e map até o presente momento são apresentados em conjunto. -->
