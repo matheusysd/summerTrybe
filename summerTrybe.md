@@ -30,7 +30,7 @@ const pessoas = [
 ];
 ```
 
-Pense que você deseja montar uma sentença para cada uma das pessoas como por exemplo 'Ana Silva tem 64 anos.'. Conseguiu imaginar? Até onde sabemos nosso código ficaria parecido com isso aqui:
+Pense que você deseja montar uma sentença para cada uma das pessoas, como por exemplo 'Ana Silva tem 64 anos.'. Conseguiu imaginar? Até onde sabemos nosso código ficaria parecido com isso aqui:
 
 ```js
 for (let indice = 0; indice < pessoas.length; indice += 1) {
@@ -73,7 +73,7 @@ O resultado disso é:
 ```
 
 Já fizemos bastante isso, porém, o uso de **for** nesses casos acaba ficando repetitivo e dependendo da complexidade pode ficar muito grande.
-É aí que entra o **map**! Vamos refazer então, agora com auxílio dessa *HOF*, o primeiro exemplo onde só é necessário mostrar nossa sentença na tela:
+É aí que entra o **map**! Vamos refazer então, agora com auxílio dessa _HOF_, o primeiro exemplo onde só é necessário mostrar nossa sentença na tela:
 
 ```js
 pessoas.map((pessoa) =>
@@ -143,7 +143,7 @@ A execução dessas linhas resultam em:
 
 ```
 
-> Note que o array inicial não foi alterado.
+> Note que o array inicial não foi alterado. OLHAR QUOTE
 
 > Você verá que o uso do **map** é bem comum em conjunto com outras _HOFs_.
 
@@ -158,12 +158,11 @@ Esses quatro parâmetros são:
 - Index atual, que iremos chamar de _idx_.
 - Array original, que iremos chamar de _array_.
 
-O acumulador recebe o valor de retorno da função determinada e a cada atualização do acumulador esse valor é passado para a próxima iteração até que chegue na última posição do array. (Não se apavore, você verá como funciona!)
+O acumulador recebe o valor de retorno da função envelopada pelo reduce e a cada atualização do acumulador esse valor é passado para a próxima iteração até que chegue na última posição do array. (Não se apavore, você verá como funciona!)
 
 > Lembrando que os dois primeiros parâmetros são obrigatórios.
 
 Usando aquele mesmo array do início, vamos supor que você quer somar a idade de todas as pessoas. Como você iria realizar essa soma? Seria mais ou menos assim, certo?
-
 
 ```js
 let somaIdades = 0;
@@ -181,7 +180,7 @@ A soma de todas as idades é: 89.
 
 > Existe também a ideia de pegar a idade das pessoas com o **map** e somar todas as posições desse array, mas a forma mais direta é essa.
 
-Novamente batemos naquela tecla: "sempre que eu quiser trabalhar com arrays, vou usar um **for**?" Como já falado, as _HOFs_ existem para nos ajudar e facilitar nossa experiência com arrays. Então vamos colocar o **reduce** em jogo! Já falamos sobre os parâmetros da função determinada, mas o **reduce** por si só já possui um parâmetro: o valor inicial.
+Novamente batemos naquela tecla: "sempre que eu quiser trabalhar com arrays, vou usar um **for**?" Como já falado, as _HOFs_ existem para nos ajudar e facilitar nossa experiência com arrays. Então vamos colocar o **reduce** em jogo! Já falamos sobre os parâmetros da função envelopada, mas o **reduce** por si só já possui um parâmetro: o valor inicial.
 
 O valor inicial é opcional, se ele for definido esse valor será usado na primeira chamada da função, se não o primeiro elemento do array ocupará esse lugar.
 
@@ -216,9 +215,9 @@ Acumulador: 53 | Valor atual: 10.
 Acumulador: 63 | Valor atual: 26.
 ```
 
-Como o valor atual chegou a última posição do array original, a função determinada não é mais executada e o valor retornado é o resultado da soma dos últimos dois valores (63 + 26).
+Como o valor atual chegou a última posição do array original, a função envelopada não é mais executada e o valor retornado é o resultado da soma dos últimos dois valores (63 + 26).
 
-> Como nesse exemplo estamos lidando com objetos, devemos definir o valor inicial para 0.
+> Como nesse exemplo estamos lidando com objetos, devemos definir o valor inicial para 0 se não a função irá somar o valor da idade com o valor do objeto na primeira posição como um todo. Logo mais entenderá.
 
 Agora que você já viu um exemplo com objeto, aqui está um com array simples:
 
@@ -233,9 +232,186 @@ E assim vemos:
 ```
 A soma do array idades é: 89.
 ```
+
 > Note que nesse caso não é necessário definir o valor inicial, por se tratar de um array simples podemos assumir que o valor inicial será a primeira posição do array.
 
 > No código acima, se declararmos o valor inicial como 21, você tem ideia do que aconteceria? Experimente!
+
 ## Exercícios
+
+Tempo sugerido para realização: 100 minutos
+
+1. Crie um array de strings seguindo o formato '*NOME_DA_PESSOA* tem *IDADE_DA_PESSOA* anos.'
+
+- Dica: Você deve utilizar as funções _map_ e _sort_.
+
+```js
+const assert = require('assert');
+
+const familia = [
+  { nome: 'Marcela', idade: 29 },
+  { nome: 'Ana', idade: 26 },
+  { nome: 'André', idade: 35 },
+  { nome: 'Carla', idade: 15 },
+  { nome: 'Lídia', idade: 8 },
+];
+
+const resultado_esperado = [
+  'Ana tem 26 anos.',
+  'André tem 35 anos.',
+  'Carla tem 15 anos.',
+  'Lídia tem 8 anos.',
+  'Marcela tem 29 anos.',
+];
+
+function familiaOrdenada() {
+  // Implemente seu código aqui.
+}
+
+assert.deepEqual(familiaOrdenada(), resultado_esperado);
+
+```
+
+2. Seguindo a mesma linha do exercício anterior, crie um array contendo strings no formato '*NOME_DE_PERSONAGEM* é *FUNCAO_DE_PERSONAGEM* da casa *CASA_DE_PERSONAGEM*.', ordenando alfabeticamente.
+
+```js
+const assert = require('assert');
+
+const personagens = [
+  {
+    nome: 'Hermione Granger',
+    funcao: 'estudante',
+    casa: 'Grifinória',
+  },
+  {
+    nome: 'Draco Malfoy',
+    funcao: 'estudante',
+    casa: 'Sonserina',
+  },
+  {
+    nome: 'Horácio Slughorn',
+    funcao: 'professor de Poções',
+    casa: 'Sonserina',
+  },
+  {
+    nome: 'Cho Chang',
+    funcao: 'estudante',
+    casa: 'Corvinal',
+  },
+  {
+    nome: 'Cedrico Diggory',
+    funcao: 'estudante',
+    casa: 'Lufa-Lufa',
+  },
+];
+
+const resultado_esperado = [
+  'Cedric Diggory é estudante da casa Lufa-Lufa.',
+  'Cho Chang é estudante da casa Corvinal.',
+  'Draco Malfoy é estudante da casa Sonserina.',
+  'Hermione Granger é estudante da casa Grifinória.',
+  'Horace Slughorn é professor de Poções da casa Sonserina.',
+];
+
+function criarArrays() {
+  // Implemente seu código aqui.
+}
+
+assert.deepEqual(criarArrays(), resultado_esperado);
+
+```
+
+3. A partir do array de personagens, crie um array de objetos contendo as propriedades *nome*, *varinha* e *bichoPapao*, onde estarão os nomes, varinha e bicho papão de cada uma das personagens.
+
+```js
+const assert = require('assert');
+
+const personagens = [
+  {
+    id: '5a109af13dc2080021cd877a',
+    nome: 'Hermione Granger',
+    funcao: 'estudante',
+    casa: 'Grifinória',
+    varinha: 'Madeira de videira, 27.305cm, núcleo de fibra de coração de dragão',
+    bichoPapao: 'falhar',
+    patrono: 'lontra',
+    linhagem: 'trouxa',
+  },
+  {
+    id: '5a1097653dc2080021cd8763',
+    nome: 'Albus Dumbledore',
+    funcao: 'Diretor de Hogwarts',
+    casa: 'Grifinória',
+    varinha: 'Madeira de sabugueiro, 38.1cm, núcleo de pelo de unicórniocauda de trestálio',
+    bichoPapao: 'Ariana (irmã)',
+    patrono: 'fênix',
+    linhagem: 'meio-sangue',
+  },
+  {
+    id: '5a109c3d3dc2080021cd8780',
+    nome: 'Rubeus Hagrid',
+    funcao: 'Guarda-caça, Professor, Cuidador da Criaturas Mágicas',
+    casa: 'Grifinória',
+    varinha: 'Madeira de carvalho, 40.64cm, núcleo desconhecido',
+    bichoPapao: 'Lord Voldemort',
+    patronus: null,
+    linhagem: 'desconhecida',
+  },
+  {
+    id: '5a109e543dc2080021cd8790',
+    nome: 'Neville Longbottom',
+    funcao: 'estudante',
+    casa: 'Grifinória',
+    varinha: 'Madeira de cerejeira, 33.02cm, núcleo de pelo de unicórnio',
+    bichoPapao: 'Severus Snape',
+    linhagem: 'puro-sangue',
+  },
+  {
+    id: '5a109f053dc2080021cd8793',
+    nome: 'Remus Lupin',
+    funcao: 'Professor, Defence Against the Dark Arts',
+    casa: 'Grifinória',
+    varinha: 'Madeira de cipreste, 26cm, núcleo de pelo de unicórnio',
+    bichoPapao: 'lua cheia',
+    patrono: 'lobo',
+    linhagem: 'meio-sangue',
+  },
+];
+
+const resultado_esperado = [
+  {
+    nome: 'Hermione Granger',
+    varinha: 'Madeira de videira, 27.305cm, núcleo de fibra de coração de dragão',
+    bichoPapao: 'falhar',
+  },
+  {
+    nome: 'Albus Dumbledore',
+    varinha: 'Madeira de sabugueiro, 38.1cm, núcleo de pelo de unicórniocauda de trestálio',
+    bichoPapao: 'Ariana (irmã)',
+  },
+  {
+    nome: 'Rubeus Hagrid',
+    varinha: 'Madeira de carvalho, 40.64cm, núcleo desconhecido',
+    bichoPapao: 'Lord Voldemort',
+  },
+  {
+    nome: 'Neville Longbottom',
+    varinha: 'Madeira de cerejeira, 33.02cm, núcleo de pelo de unicórnio',
+    bichoPapao: 'Severus Snape',
+  },
+  {
+    nome: 'Remus Lupin',
+    varinha: 'Madeira de cipreste, 26cm, núcleo de pelo de unicórnio',
+    bichoPapao: 'lua cheia',
+  },
+];
+
+function criarObjetos(){
+  // Implemente seu código aqui
+}
+
+assert.deepEqual(criarObjetos(), resultado_esperado);
+
+```
 
 ## Recursos adicionais
