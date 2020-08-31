@@ -102,7 +102,7 @@ const infoPessoas = pessoas.map(
 console.log(infoPessoas);
 ```
 
-Você já deve saber, mas o resultado é:
+Talvez você já esteja imaginando, mas o resultado é:
 
 ```js
 [
@@ -241,7 +241,7 @@ A soma do array idades é: 89.
 
 Tempo sugerido para realização: 100 minutos
 
-1. Crie um array de strings seguindo o formato '*NOME_DA_PESSOA* tem *IDADE_DA_PESSOA* anos.'
+1. Crie um array de strings seguindo o formato '_NOME_DA_PESSOA_ tem _IDADE_DA_PESSOA_ anos.'
 
 - Dica: Você deve utilizar as funções _map_ e _sort_.
 
@@ -272,7 +272,7 @@ assert.deepEqual(familiaOrdenada(), resultado_esperado);
 
 ```
 
-2. Seguindo a mesma linha do exercício anterior, crie um array contendo strings no formato '*NOME_DE_PERSONAGEM* é *FUNCAO_DE_PERSONAGEM* da casa *CASA_DE_PERSONAGEM*.', ordenando alfabeticamente.
+2. Seguindo a mesma linha do exercício anterior, crie um array contendo strings no formato '_NOME_DE_PERSONAGEM_ é _FUNCAO_DE_PERSONAGEM_ da casa _CASA_DE_PERSONAGEM_.', ordenando alfabeticamente.
 
 ```js
 const assert = require('assert');
@@ -321,7 +321,7 @@ assert.deepEqual(criarArrays(), resultado_esperado);
 
 ```
 
-3. A partir do array de personagens, crie um array de objetos contendo as propriedades *nome*, *varinha* e *bichoPapao*, onde estarão os nomes, varinha e bicho papão de cada uma das personagens.
+3. A partir do array de personagens, crie um array de objetos contendo as propriedades _nome_, _varinha_ e _bichoPapao_, onde estarão os nomes, varinha e bicho papão de cada uma das personagens.
 
 ```js
 const assert = require('assert');
@@ -406,7 +406,7 @@ const resultado_esperado = [
   },
 ];
 
-function criarObjetos(){
+function criarObjetos() {
   // Implemente seu código aqui
 }
 
@@ -414,4 +414,98 @@ assert.deepEqual(criarObjetos(), resultado_esperado);
 
 ```
 
+4. Encontre o personagem com o maior nome.
+* Dica: Use a função _reduce_.
+
+```js
+const assert = require('assert');
+
+const personagens = [
+  'Katie Bell',
+  'Sirius Black',
+  'Aberforth Dumbledore',
+  'Albus Dumbledore',
+  'Seamus Finnigan',
+  'Hermione Granger',
+];
+
+const resultado_esperado = 'Aberforth Dumbledore';
+
+function maiorNome(){
+  // Implemente aqui seu código.
+
+}
+
+assert.deepEqual(maiorNome(), resultado_esperado);
+
+```
+
+```js
+const assert = require('assert');
+const personagens = [
+  {
+    id: '5a1233bc0f5ae10021650d97',
+    nome: 'Severus Snape',
+    role: 'Professor, Potions',
+    house: 'Slytherin',
+    school: 'Hogwarts School of Witchcraft and Wizardry',
+    patronus: 'doe',
+    ministryOfMagic: false,
+    orderOfThePhoenix: true,
+    dumbledoresArmy: false,
+    deathEater: true,
+    bloodStatus: 'half-blood',
+    species: 'human',
+  },
+  {
+    id: '5a1233ff0f5ae10021650d98',
+    nome: 'Alicia Spinnet',
+    role: 'student',
+    house: 'Gryffindor',
+    school: 'Hogwarts School of Witchcraft and Wizardry',
+    ministryOfMagic: false,
+    orderOfThePhoenix: false,
+    dumbledoresArmy: true,
+    deathEater: false,
+    bloodStatus: 'unknown',
+    species: 'human',
+  },
+  {
+    id: '5a1234500f5ae10021650d99',
+    nome: 'Pomona Sprout',
+    role: 'Professor, Herbology',
+    house: 'Hufflepuff',
+    school: 'Hogwarts School of Witchcraft and Wizardry',
+    ministryOfMagic: false,
+    orderOfThePhoenix: false,
+    dumbledoresArmy: false,
+    deathEater: false,
+    bloodStatus: 'unknown',
+    species: 'human',
+  },
+  {
+    id: '5a1234cb0f5ae10021650d9b',
+    nome: 'Dean Thomas',
+    role: 'student',
+    house: 'Gryffindor',
+    school: 'Hogwarts School of Witchcraft and Wizardry',
+    boggart: "severed hand walking on it's own",
+    ministryOfMagic: false,
+    orderOfThePhoenix: false,
+    dumbledoresArmy: true,
+    deathEater: false,
+    bloodStatus: 'half-blood',
+    species: 'human',
+  },
+];
+
+const resultado_esperado = 2;
+
+function apenasGrifinoria() {
+  // Implemente seu código aqui
+}
+
+assert.deepEqual(apenasGrifinoria(), resultado_esperado);
+
+```
 ## Recursos adicionais
